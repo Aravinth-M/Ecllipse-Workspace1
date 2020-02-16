@@ -1,0 +1,14 @@
+<div class="container" style="padding: 300px">
+		<div class="row">
+		<div class="col-lg-12">
+			<h4 class="heading text-center">What My Client Say?</h4>
+		</div>
+	</div>
+	</div>
+	
+	
+	<style>
+		.heading{
+			text-transform: none;
+		}
+	</style>

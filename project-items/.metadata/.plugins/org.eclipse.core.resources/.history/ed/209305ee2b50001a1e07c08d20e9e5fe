@@ -1,0 +1,72 @@
+
+<!-- html -->
+<div class="container services-container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h4 class="text-left">My Services</h4>
+		</div>
+	</div>
+	
+	<div class="container" style="top: 20px;">
+	<div class="row">
+		<div class="col-lg-3">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="header-text">Buy A Property</h6>
+				</div>
+				<div class="card-body">
+					<p>I can help finding your best home depending on your budget.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="header-text">Sell Your Property</h6>
+				</div>
+				<div class="card-body">
+					<p>I can help you sell your property with the best pricing in the market.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="header-text">Rental Listing</h6>
+				</div>
+				<div class="card-body">
+					<p> Looking to rent only? I can certainly help and negotiate for you.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="header-text">Build Your Own Home</h6>
+				</div>
+				<div class="card-body">
+					<p>I can help you build your customized dream home right from the scratch with top notch design / professionals.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	
+</div>
+
+
+
+<!-- css -->
+<style type="text/css">
+
+.services-container {
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.header-text{
+	text-transform: none;
+}
+</style>

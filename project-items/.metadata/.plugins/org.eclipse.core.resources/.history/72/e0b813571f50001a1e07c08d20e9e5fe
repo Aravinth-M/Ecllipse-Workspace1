@@ -1,0 +1,157 @@
+<head>
+	<style type="text/css">
+	.main{
+		height: 500px;
+	}
+	
+*{
+  margin:0;
+  padding:0;
+  color: blue;
+}
+
+.container-fluid{
+  margin:0;
+  padding:0;
+}
+
+.jumbotron-fluid{
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.nav{
+  background:#fff;
+}
+
+
+
+.nav-item.active .nav-link{
+  color:#cb356b;
+}
+
+
+.display-3{
+  color:#fff;
+  display:block;
+  margin-top:30px;
+}
+
+.home-map-img{
+	width: 202vh;
+	height: 110vh;
+	margin-top: 85px
+	
+}
+
+</style>
+</head>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+<div class="container">
+
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">
+  	 <img alt="" src="RightAtHome/img/RAtH-logo.png">
+   </a>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link scroll active" href="#home">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#aboutme">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#services">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#listings">LISTINGS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#testimonal">TESTIMONAL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#contact">CONTACT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">99999-99999</a>
+      </li>
+    </ul>
+  </div>
+ 
+	</div>
+</nav>
+
+
+<section id="about">
+
+<!-- <div class="banner"> -->
+	<div class="jumbotron-fluid text-center banner" id="home">
+    	<img class="home-map-img" alt="map" src="RightAtHome/img/rAth-home.jpg">
+    </div>
+<!-- </div> -->
+
+	<div class="jumbotron-fluid text-center banner-one" id="aboutme">
+    	<%@include file="aboutMe.jsp" %>
+    </div>
+	
+	<div class="jumbotron-fluid text-center banner-two" id="services">
+    	<%@include file="services.jsp" %>
+    </div>
+	
+	<div class="jumbotron-fluid text-center banner-three" id="listings">
+    	<%@include file="listings.jsp" %>
+  	</div>
+
+	<div class="jumbotron-fluid text-center banner-four" id="testimonal">
+    	<%@include file="testimonal.jsp" %>
+  	</div>
+
+	<div class="jumbotron-fluid text-center banner-five" id="contact">
+    	<%@include file="contact.jsp" %>
+  	</div>
+	
+</section>
+	
+	
+	
+<script type="text/javascript">
+
+$(document).on("scroll", function(){
+	if
+  ($(document).scrollTop() > 30){
+	  $("#banner").addClass("shrink");
+	  $(".navbar-brand").css("color", "#ffffff");
+	  $(".nav-link").css("color", "#ffffff");
+	}
+	else
+	{
+		$("#banner").removeClass("shrink");
+		$(".navbar-brand").css("color", "#52288e");
+		$(".nav-link").css("color", "#52288e");
+	}
+});
+
+
+$(document).ready(function(){
+	 let scroll_link = $('.scroll');
+	 $(".navbar-brand").css("color", "#52288e");
+	 $(".nav-link").css("color", "#52288e");  
+	  //smooth scrolling -----------------------
+	  scroll_link.click(function(e){
+	      e.preventDefault();
+	      let url = $('body').find($(this).attr('href')).offset().top;
+	      $('html, body').animate({
+	        scrollTop : url
+	      },700);
+	      $(this).parent().addClass('active');
+	      $(this).parent().siblings().removeClass('active');
+	      return false;	
+	   });
+	});
+</script>

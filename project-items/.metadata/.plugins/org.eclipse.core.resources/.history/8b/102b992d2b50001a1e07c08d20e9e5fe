@@ -1,0 +1,71 @@
+
+<!-- html -->
+<div class="container services-container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h4 class="text-left">My Services</h4>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-3">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="header-text">Buy A Property</h6>
+				</div>
+				<div class="card-body">
+					body
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="header-text">Sell Your Property</h6>
+				</div>
+				<div class="card-body">
+					body
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="header-text">Rental Listing</h6>
+				</div>
+				<div class="card-body">
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="header-text">Build Your Own Home</h6>
+				</div>
+				<div class="card-body">
+					body
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+</div>
+
+
+
+<!-- css -->
+<style type="text/css">
+
+.services-container {
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.header-text{
+	text-transform: none;
+}
+</style>

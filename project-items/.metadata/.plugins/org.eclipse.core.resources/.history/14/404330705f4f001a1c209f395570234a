@@ -1,0 +1,205 @@
+<head>
+	<style type="text/css">
+	.main{
+		height: 500px;
+	}
+	
+	*{
+  margin:0;
+  padding:0;
+}
+
+.container-fluid{
+  margin:0;
+  padding:0;
+}
+
+.jumbotron-fluid{
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.nav{
+  background:#fff;
+}
+
+
+
+.nav-item.active .nav-link{
+  color:#cb356b;
+}
+
+
+.display-3{
+  color:#fff;
+  display:block;
+  margin-top:30px;
+}
+
+.banner-one{
+  background: #06beb6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.banner-two{
+  background: #642B73;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.banner-three{
+  background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.banner-four{
+  background: #CB356B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.banner-five{
+	background-color: black;
+}
+
+.home-map-img{
+	width: 202vh;
+	height: 110vh;
+	margin-top: 60px
+	
+}
+
+/* .navbar-dark .navbar-brand{
+	color: #52288e;
+} */
+
+/* .navbar-dark .navbar-nav .nav-link.active{
+	color: #52288e;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: #52288e;
+}
+
+.shrink .container .navbar-brand  {
+	color: #ffffff;
+} */
+	</style>
+</head>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+<div class="container">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">
+  	<!-- <img alt="" src="img/RAtH-logo.png" height="50px" width="50px"> -->
+  	LOGO
+  </a>
+
+  <!-- Toggler/collapsibe Button -->
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link scroll active" href="#home">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#aboutme">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#services">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#listings">LISTINGS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#testimonal">TESTIMONAL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#contact">CONTACT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">99999-99999</a>
+      </li>
+    </ul>
+  </div>
+ 
+	</div>
+</nav>
+
+
+<section id="about">
+
+<!-- <div class="banner"> -->
+	<div class="jumbotron-fluid text-center banner" id="home">
+    	<img class="home-map-img" alt="map" src="RightAtHome/img/rAth-home.jpg">
+    </div>
+<!-- </div> -->
+
+	<div class="jumbotron-fluid text-center banner-one" id="aboutme">
+    	<%@include file="aboutMe.jsp" %>
+    </div>
+	
+	<div class="jumbotron-fluid text-center banner-two" id="services">
+    	<%@include file="services.jsp" %>
+    </div>
+	
+	<div class="jumbotron-fluid text-center banner-three" id="listings">
+    	<%@include file="listings.jsp" %>
+  	</div>
+
+	<div class="jumbotron-fluid text-center banner-four" id="testimonal">
+    	<%@include file="testimonal.jsp" %>
+  	</div>
+
+	<div class="jumbotron-fluid text-center banner-five" id="contact">
+    	<%@include file="contact.jsp" %>
+  	</div>
+	
+</section>
+	
+	
+	
+<script type="text/javascript">
+
+$(document).on("scroll", function(){
+	if
+  ($(document).scrollTop() > 50){
+	  $("#banner").addClass("shrink");
+	  $(".navbar-brand").css("color", "#ffffff");
+	  $(".nav-link").css("color", "#ffffff");
+	}
+	else
+	{
+		$("#banner").removeClass("shrink");
+		$(".navbar-brand").css("color", "#52288e");
+		$(".nav-link").css("color", "#52288e");
+	}
+});
+
+
+$(document).ready(function(){
+	 let scroll_link = $('.scroll');
+	 $(".navbar-brand").css("color", "#52288e");
+	 $(".nav-link").css("color", "#52288e");  
+	  //smooth scrolling -----------------------
+	  scroll_link.click(function(e){
+	      e.preventDefault();
+	      let url = $('body').find($(this).attr('href')).offset().top;
+	      $('html, body').animate({
+	        scrollTop : url
+	      },700);
+	      $(this).parent().addClass('active');
+	      $(this).parent().siblings().removeClass('active');
+	      return false;	
+	   });
+	});
+</script>

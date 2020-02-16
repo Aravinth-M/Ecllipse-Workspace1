@@ -1,0 +1,19 @@
+
+<!-- html -->
+<div class="container listing-container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h4 class="heading text-center">Property Pictures</h4>
+		</div>
+	</div>
+</div>
+
+
+<!-- css -->
+<style>
+.listing-container {
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+</style>

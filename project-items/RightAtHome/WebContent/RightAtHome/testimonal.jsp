@@ -1,0 +1,23 @@
+
+<!-- html -->
+<div class="container testimonal-container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h4 class="heading text-center">What My Client Say?</h4>
+		</div>
+	</div>
+</div>
+
+
+<!-- css -->
+<style>
+.testimonal-container {
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.heading {
+	text-transform: none;
+}
+</style>

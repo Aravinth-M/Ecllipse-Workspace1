@@ -1,0 +1,31 @@
+
+<!-- html -->
+<div class="container aboutme-container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h4 class="text-center">About Me</h4>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-5">
+			<img class="about-img" alt="aboutme"
+					src="RightAtHome/img/about-img.jpg">
+		</div>
+		<div class="col-lg-7">
+			<div class="container">
+				<h5>Customer's needs and concerns are my top  most priority. My goal is to be available to my customers and to work with their best interest in mind - ALWAYS</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- css -->
+<style>
+.aboutme-container {
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+</style>

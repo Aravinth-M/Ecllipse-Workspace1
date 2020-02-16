@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+
+
+<body>
+	<div class="top-container">
+		<!-- <h1>Scroll Down</h1>
+		<p>Scroll down to see the sticky effect.</p> -->
+	</div>
+
+	<div class="header" id="myHeader">
+		<h2>My Header</h2>
+	</div>
+
+	
+
+	<script>
+		window.onscroll = function() 
+		{
+			myFunction()
+		};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() 
+		{
+			if (window.pageYOffset > sticky) 
+			{
+				header.classList.add("sticky");
+			} 
+			else
+			 {
+				header.classList.remove("sticky");
+			 }
+		}
+	</script>
+</body>
+</html>

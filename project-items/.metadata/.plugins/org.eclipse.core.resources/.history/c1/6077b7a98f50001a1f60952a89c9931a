@@ -1,0 +1,51 @@
+
+<!-- html -->
+<div class="container aboutme-container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h4 class="text-center">About Me</h4>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-5">
+			<img class="about-img" alt="aboutme"
+					src="RightAtHome/img/about-img.jpg">
+		</div>
+		<div class="col-lg-7">
+			<div class="container">
+				<h3 class="aboutme-content-one">Customer's needs and concerns are my top  most priority. My goal is to be available to my customers 
+				and to work with their best interest in mind - ALWAYS!!!</h3>
+				
+				<div class="aboutme-content-two">
+					<p>There are lots of agents in the market to pick when you want to buy or sell a home… Why choose me?</p>
+					<p>First and Foremost, I consider real estate as people’s business and align it with my customer’s hopes and dreams. 
+					It's more than just dollars and cents. I want to offer you this unique service.</p>
+					<p>With over 15 years of experience in client services management in variety of industries, I have always
+					 strived to exceed my clients' expectations in all aspects and decided to transition my career into real estate but provide a high quality service to my
+					  clients in the real estate industry.</p>
+					<p>Success in real estate starts with not just self-knowledge but also educating my clients with the most important facts that they must be aware of. 
+					I bring in a lot of facts, the nuances of the local markets, the dynamics of supply and demand, and how these things affect you as a buyer or seller.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- css -->
+<style>
+.aboutme-container {
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.aboutme-content-one{
+	text-transform: none;
+	color: #4d4d4d;
+}
+
+.aboutme-content-two{
+}
+</style>
